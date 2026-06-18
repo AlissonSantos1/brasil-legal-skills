@@ -123,3 +123,51 @@ Com essas informações, calcular:
 - Qual regra de transição é mais vantajosa
 - Quantos anos ainda faltam
 - Se vale a pena contribuir como autônomo para antecipar
+
+---
+
+## Planejamento Avançado de Carreira Contributiva
+
+### Estratégias por perfil
+
+| Perfil | Problema comum | Estratégia |
+|--------|---------------|------------|
+| **CLT com lacunas** | Períodos desempregado sem contribuir | Contribuição como autônomo retroativa (máx. 5 anos) via GPS |
+| **MEI querendo + benefícios** | MEI só garante aposentadoria por idade | Complementar com contribuição de 15% (total 20%) |
+| **Autônomo** | Sem vínculo — benefício depende só das contribuições | Escolher plano pleno (20%) para garantir todos benefícios |
+| **Próximo da aposentadoria** | Poucos anos faltando | Simular custo vs. benefício de contribuir até o limite |
+| **Alto salário** | Teto INSS em R$ 8.157,41 | PGBL para compensar; avaliar previdência privada complementar |
+
+### Períodos sem contribuição — como regularizar
+
+1. **Contribuição retroativa** — possível pelos últimos **5 anos** (art. 45-A da Lei 8.212/91)
+   - Via GPS (Guia da Previdência Social) com código específico
+   - Acréscimos: SELIC + 2% multa
+
+2. **Certidão de Tempo de Contribuição (CTC)** — unifica períodos de regimes diferentes
+   (RPPS ↔ RGPS)
+
+3. **Período MEI** — conta como contribuição, mas apenas para aposentadoria por **idade**;
+   para tempo de contribuição, é necessário ter contribuído pelo plano complementar
+
+### PGBL vs. VGBL — quando usar cada um
+
+| | PGBL | VGBL |
+|---|------|------|
+| **Deduz no IR** | Sim — até 12% da renda tributável | Não |
+| **Tributação no resgate** | Sobre valor total (principal + rendimento) | Só sobre rendimento |
+| **Para quem** | Quem declara IR completo e paga imposto | Quem declara simplificado ou isento |
+| **Estratégia** | Deduzir agora na alíquota alta, resgatar na aposentadoria com alíquota menor | Acumular sem tributação sobre principal |
+
+### Calculadoras disponíveis
+
+```bash
+# Estimativa de aposentadoria com ranking de regras
+python3 scripts/aposentadoria_estimativa.py \
+  --idade 45 --contribuicoes 20 --salario-medio 6000 --sexo M --pre-reforma
+
+# Planejamento completo: estratégias, custo de contribuição, análise PGBL
+python3 scripts/planejamento_contributivo.py \
+  --idade 42 --contribuicoes 18 --salario 7000 --sexo F --pre-reforma \
+  --plano pleno --renda-anual 84000 --aliquota-ir 0.275 --aporte-pgbl 10080
+```

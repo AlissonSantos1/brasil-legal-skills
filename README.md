@@ -260,9 +260,9 @@ python3 previdencia/scripts/aposentadoria_estimativa.py \
 - [x] v1.0 — IRPF, Tributário, Trabalhista, Societário
 - [x] v2.0 — CDC, LGPD, Contratos, Licitações, Previdência + declaração guiada + Reforma Tributária 2026
 - [x] v2.1 — Calculadoras completas: CLT vs PJ, aposentadoria INSS, INSS progressivo, salário líquido
-- [ ] v2.2 — Parser de arquivo .DBK da Receita Federal
-- [ ] v2.3 — Direito Previdenciário avançado (planejamento de carreira contributiva)
-- [ ] v3.0 — Agentes especializados por área + slash commands `/irpf`, `/rescisao`, `/simples`
+- [x] v2.2 — Parser de arquivo .DBK/.REC da Receita Federal (extrai dados da declaração)
+- [x] v2.3 — Previdência avançada: planejamento de carreira contributiva, PGBL vs VGBL, estratégias por perfil
+- [x] v3.0 — 5 slash commands especializados: `/irpf`, `/rescisao`, `/simples`, `/clt-pj`, `/aposentadoria`
 - [ ] v4.0 — Ecossistema Brasil Legal (ver seção abaixo)
 
 ## 🔭 Além do v3 — Ecossistema Brasil Legal
