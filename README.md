@@ -319,7 +319,7 @@ e no programa oficial da Receita Federal.
 
 Se esta skill economizou seu tempo ou dinheiro, considere deixar uma ⭐
 
-**Criado por [Alisson Santos](https://github.com/AlissonSantos1) · [@AlissonSantos1](https://github.com/AlissonSantos1) · [LinkedIn](https://www.linkedin.com/in/alissonsantos1/) · Brasil · 2026**
+**Criado por Alisson Santos · [@AlissonSantos1](https://github.com/AlissonSantos1) · [LinkedIn](https://www.linkedin.com/in/alissonsantos1/) · Brasil · 2026**
 
 *Copyright (c) 2026 Alisson Santos — Licença MIT · [Ver ATTRIBUTION.md](ATTRIBUTION.md)*
 
