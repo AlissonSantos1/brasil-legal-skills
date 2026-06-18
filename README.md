@@ -301,8 +301,10 @@ e no programa oficial da Receita Federal.
 
 Se esta skill economizou seu tempo ou dinheiro, considere deixar uma ⭐
 
-**[@AlissonSantos1](https://github.com/AlissonSantos1)** · **[LinkedIn](https://www.linkedin.com/in/alissonsantos1/)** · Brasil · 2026
+**Criado por [Alisson Santos](https://github.com/AlissonSantos1) · [@AlissonSantos1](https://github.com/AlissonSantos1) · [LinkedIn](https://www.linkedin.com/in/alissonsantos1/) · Brasil · 2026**
 
-*Compartilhe com aquele amigo dev que também tem medo da Receita Federal 😄*
+*Copyright (c) 2026 Alisson Santos — Licença MIT · [Ver ATTRIBUTION.md](ATTRIBUTION.md)*
+
+*Compartilhe com quem você conhece que precisa entender os próprios direitos — porque a lei vale para todo mundo. 🇧🇷*
 
 </div>

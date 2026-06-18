@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 """
 Calculadora de Rescisão Trabalhista — CLT
-Autor: AlissonSantos1
+Autor: Alisson Santos — github.com/AlissonSantos1/brasil-legal-skills
+Copyright (c) 2026 Alisson Santos. Licença MIT.
 """
+__author__ = "Alisson Santos"
+__copyright__ = "Copyright (c) 2026 Alisson Santos"
+__license__ = "MIT"
+__source__ = "https://github.com/AlissonSantos1/brasil-legal-skills"
+
 import argparse
 
 
@@ -93,6 +99,7 @@ def main():
     print("=" * 55)
     print("\n⚠️  Valor bruto. Sujeito a descontos de INSS e IR.")
     print("    Consulte um advogado trabalhista para sua situação.")
+    print(f"\n  brasil-legal-skills · {__author__} · {__source__}")
 
 
 if __name__ == "__main__":

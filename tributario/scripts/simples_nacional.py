@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 """
 Calculadora do Simples Nacional — LC 123/2006
-Autor: AlissonSantos1
+Autor: Alisson Santos — github.com/AlissonSantos1/brasil-legal-skills
+Copyright (c) 2026 Alisson Santos. Licença MIT.
 """
+__author__ = "Alisson Santos"
+__copyright__ = "Copyright (c) 2026 Alisson Santos"
+__license__ = "MIT"
+__source__ = "https://github.com/AlissonSantos1/brasil-legal-skills"
+
 import argparse
 
 
@@ -107,6 +113,7 @@ def main():
     print(f"  DAS anual estimado: R$ {r['das_anual_estimado']:>10,.2f}")
     print("=" * 52)
     print("\n⚠️  Cálculo estimado. Consulte seu contador.")
+    print(f"\n  brasil-legal-skills · {__author__} · {__source__}")
 
 
 if __name__ == "__main__":

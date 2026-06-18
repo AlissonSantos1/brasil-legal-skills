@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 """
 Calculadora de IRPF 2026 — Tabela Progressiva
-Autor: AlissonSantos1
+Autor: Alisson Santos — github.com/AlissonSantos1/brasil-legal-skills
+Copyright (c) 2026 Alisson Santos. Licença MIT.
 """
+__author__ = "Alisson Santos"
+__copyright__ = "Copyright (c) 2026 Alisson Santos"
+__license__ = "MIT"
+__source__ = "https://github.com/AlissonSantos1/brasil-legal-skills"
+
 import argparse
 
 
@@ -105,6 +111,7 @@ def main():
     print(f"  💰 Economia: R$ {resultado['economia']:,.2f}")
     print("=" * 50)
     print("\n⚠️  Consulte um contador para sua situação específica.")
+    print(f"\n  brasil-legal-skills · {__author__} · {__source__}")
 
 
 if __name__ == "__main__":
