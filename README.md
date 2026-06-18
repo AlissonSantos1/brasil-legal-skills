@@ -4,8 +4,10 @@
 
 ### O seu advogado, contador e consultor tributário com IA — disponível 24h, em português, sem cobrar por hora.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
-[![Version](https://img.shields.io/badge/versão-2.0.0-brightgreen?style=for-the-badge)]()
+[![License: MIT](https://img.shields.io/github/license/AlissonSantos1/brasil-legal-skills?style=for-the-badge&color=yellow)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/AlissonSantos1/brasil-legal-skills?style=for-the-badge&color=brightgreen)](https://github.com/AlissonSantos1/brasil-legal-skills/releases)
+[![Stars](https://img.shields.io/github/stars/AlissonSantos1/brasil-legal-skills?style=for-the-badge&color=gold)](https://github.com/AlissonSantos1/brasil-legal-skills/stargazers)
+[![Forks](https://img.shields.io/github/forks/AlissonSantos1/brasil-legal-skills?style=for-the-badge&color=blue)](https://github.com/AlissonSantos1/brasil-legal-skills/forks)
 [![Modules](https://img.shields.io/badge/módulos-9-blue?style=for-the-badge)]()
 [![Scripts](https://img.shields.io/badge/calculadoras-12+-orange?style=for-the-badge)]()
 [![Language](https://img.shields.io/badge/idioma-Português-009c3b?style=for-the-badge)]()
