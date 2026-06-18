@@ -259,10 +259,28 @@ python3 previdencia/scripts/aposentadoria_estimativa.py \
 
 - [x] v1.0 — IRPF, Tributário, Trabalhista, Societário
 - [x] v2.0 — CDC, LGPD, Contratos, Licitações, Previdência + declaração guiada + Reforma Tributária 2026
-- [ ] v2.1 — Calculadoras completas (CLT vs PJ, aposentadoria, INSS, salário líquido)
+- [x] v2.1 — Calculadoras completas: CLT vs PJ, aposentadoria INSS, INSS progressivo, salário líquido
 - [ ] v2.2 — Parser de arquivo .DBK da Receita Federal
 - [ ] v2.3 — Direito Previdenciário avançado (planejamento de carreira contributiva)
 - [ ] v3.0 — Agentes especializados por área + slash commands `/irpf`, `/rescisao`, `/simples`
+- [ ] v4.0 — Ecossistema Brasil Legal (ver seção abaixo)
+
+## 🔭 Além do v3 — Ecossistema Brasil Legal
+
+### Novos plugins (projetos independentes)
+- [ ] **`brasil-imobiliario-skills`** — Compra, venda, financiamento CEF, ITBI, registro, usucapião, REURB
+- [ ] **`brasil-familiar-skills`** — Divórcio, pensão alimentícia, guarda, herança, inventário, ITCMD
+- [ ] **`brasil-empreendedor-skills`** — Jornada MEI → ME → EPP: DAS, nota fiscal, limite, transição de regime
+- [ ] **`brasil-concursos-skills`** — Servidor público: estabilidade, remuneração, progressão, PAD
+
+### Ferramentas
+- [ ] **CLI standalone** — Pacote npm/pip `brasil-legal` para rodar calculadoras sem Claude Code
+- [ ] **Web app** — Interface leve (FastAPI + HTML) para democratizar acesso sem IDE
+- [ ] **MCP Server** — Servidor MCP dedicado para integrar as calculadoras diretamente no Claude
+
+### Integrações
+- [ ] **Integração Receita Federal** — Conectar com API pública da RF para consulta de CNPJ, situação fiscal
+- [ ] **Calendário tributário** — Alertas de vencimentos: DAS, DARF, DCTF, GFIP, obrigações mensais
 
 ---
 
