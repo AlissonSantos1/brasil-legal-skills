@@ -9,7 +9,7 @@
 [![Stars](https://img.shields.io/github/stars/AlissonSantos1/brasil-legal-skills?style=for-the-badge&color=gold)](https://github.com/AlissonSantos1/brasil-legal-skills/stargazers)
 [![Forks](https://img.shields.io/github/forks/AlissonSantos1/brasil-legal-skills?style=for-the-badge&color=blue)](https://github.com/AlissonSantos1/brasil-legal-skills/forks)
 [![Modules](https://img.shields.io/badge/módulos-9-blue?style=for-the-badge)]()
-[![Scripts](https://img.shields.io/badge/calculadoras-12+-orange?style=for-the-badge)]()
+[![Scripts](https://img.shields.io/badge/calculadoras-13+-orange?style=for-the-badge)]()
 [![Language](https://img.shields.io/badge/idioma-Português-009c3b?style=for-the-badge)]()
 [![Made in Brazil](https://img.shields.io/badge/feito_no-Brasil-002776?style=for-the-badge)]()
 
@@ -79,10 +79,12 @@ E aí você:
 - Destinação de até **3% do IR** para fundos sociais
 - Parser de arquivos **.DBK** do programa oficial da Receita
 
-### 🏛️ Tributário — Simples Nacional, MEI e Reforma Tributária
-> *"Pare de pagar mais imposto do que deve"*
+### 🏛️ Tributário — Simples Nacional, MEI, Reforma Tributária e Split Payment
+> *"Pare de pagar mais imposto do que deve — e entenda o que vem aí"*
 
-- **Reforma Tributária 2026** — CBS/IBS, novas obrigações em NF-e e NFS-e
+- **`/reforma`** — Slash command completo: CBS, IBS, Imposto Seletivo e **Split Payment**
+- **Split Payment** — Como o fracionamento automático afeta seu fluxo de caixa canal a canal (Pix, cartão, boleto) com simulador Python
+- Cronograma 2026–2033 com impacto por regime (MEI, Simples, Presumido, Real)
 - **PIS/COFINS atualizado** — mudanças na alíquota zero 2026
 - **MEI:** como abrir CNPJ, escolher CNAE, emitir nota, obrigações
 - **Simples Nacional** — 6 Anexos, cálculo de alíquota efetiva
@@ -194,6 +196,10 @@ Após instalar, basta perguntar naturalmente em português:
 # Tributário
 "Como abro um MEI para desenvolvimento de software?"
 "O que muda para minha empresa com a Reforma Tributária 2026?"
+"Como o split payment vai afetar meu fluxo de caixa?"
+/reforma split          # foco no split payment
+/reforma cronograma     # linha do tempo 2026–2033
+/reforma simples        # impacto específico para Simples Nacional
 
 # Societário
 "Quero abrir empresa com um sócio — o que devo incluir no contrato?"
@@ -234,6 +240,11 @@ python3 trabalhista/scripts/clt_vs_pj.py \
 # Estimativa de aposentadoria
 python3 previdencia/scripts/aposentadoria_estimativa.py \
   --idade 45 --contribuicoes 22 --salario_medio 6000 --sexo masculino
+
+# Split payment — impacto no fluxo de caixa (Reforma Tributária EC 132/2023)
+python3 tributario/scripts/split_payment_simulator.py \
+  --faturamento 50000 --regime simples --anexo 3 \
+  --pix 60 --cartao 30 --boleto 5 --dinheiro 5
 ```
 
 ---
@@ -244,7 +255,7 @@ python3 previdencia/scripts/aposentadoria_estimativa.py \
 |------|-----------|
 | IRPF | Decreto 9.580/2018 · IN RFB 2.255/2025 · Lei 15.270/2025 |
 | Simples Nacional | LC 123/2006 · Resoluções CGSN |
-| Reforma Tributária | EC 132/2023 · LC 214/2024 |
+| Reforma Tributária | EC 132/2023 · LC 214/2025 (CBS/IBS/IS) |
 | CLT | Decreto-Lei 5.452/1943 · Lei 13.467/2017 |
 | Previdência | EC 103/2019 · Lei 8.213/1991 |
 | Consumidor | Lei 8.078/1990 (CDC) |
@@ -263,6 +274,7 @@ python3 previdencia/scripts/aposentadoria_estimativa.py \
 - [x] v2.2 — Parser de arquivo .DBK/.REC da Receita Federal (extrai dados da declaração)
 - [x] v2.3 — Previdência avançada: planejamento de carreira contributiva, PGBL vs VGBL, estratégias por perfil
 - [x] v3.0 — 5 slash commands especializados: `/irpf`, `/rescisao`, `/simples`, `/clt-pj`, `/aposentadoria`
+- [x] v2.4 — `/reforma`: Reforma Tributária completa (CBS/IBS/IS) + Split Payment com simulador de fluxo de caixa por canal de pagamento (Pix, cartão, boleto) e projeção 2026–2033
 - [ ] v4.0 — Ecossistema Brasil Legal (ver seção abaixo)
 
 ## 🔭 Além do v3 — Ecossistema Brasil Legal
